@@ -42,21 +42,6 @@ export default {
           image: 'the_cult-she_sells_sanctuary.jpg',
         },
         {
-          artist: 'Foo Fighters',
-          songTitle: 'Everlong',
-          image: 'foo_fighters-everlong.jpg',
-        },
-        {
-          artist: 'Foo Fighters',
-          songTitle: 'Times Like These',
-          image: 'foo_fighters-times_like_these.jpg',
-        },
-        {
-          artist: 'Foo Fighters',
-          songTitle: 'These Days',
-          image: 'foo_fighters-these_days.jpg',
-        },
-        {
           artist: 'The Beatles',
           songTitle: 'I\'m Looking Through You',
           image: 'the_beatles-im_looking_through_you.jpg',
