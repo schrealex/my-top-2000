@@ -17,14 +17,25 @@
 <script>
 export default {
   name: 'App',
-  components: {},
+  components: {
+  },
   data() {
     return {
       showCoverArt: false,
-      selectedSong: {
+      selectedSong: { 
         image: '',
       },
       myTopSongs: [
+        {
+          artist: 'Danny Vera',
+          songTitle: 'Rollercoaster',
+          image: 'danny_vera-rollercoaster.jpg',
+        },
+        {
+          artist: 'Danny Vera',
+          songTitle: 'Distant Rumble',
+          image: 'danny_vera-distant_rumble.jpg',
+        },
         {
           artist: 'The Cult',
           songTitle: 'She Sells Sanctuary',
@@ -32,8 +43,8 @@ export default {
         },
         {
           artist: 'Foo Fighters',
-          songTitle: 'Best of You',
-          image: 'foo_fighters-best-of-you.jpg',
+          songTitle: 'Everlong',
+          image: 'foo_fighters-everlong.jpg',
         },
         {
           artist: 'Foo Fighters',
@@ -42,23 +53,18 @@ export default {
         },
         {
           artist: 'Foo Fighters',
-          songTitle: 'Learn to Fly',
-          image: 'foo_fighters-learn-to-fly.jpg',
+          songTitle: 'These Days',
+          image: 'foo_fighters-these_days.jpg',
         },
         {
           artist: 'The Beatles',
-          songTitle: 'Get Back',
-          image: 'the_beatles-get_back.jpg',
+          songTitle: 'I\'m Looking Through You',
+          image: 'the_beatles-im_looking_through_you.jpg',
         },
         {
           artist: 'The Beatles',
-          songTitle: 'Something',
-          image: 'the_beatles-something.jpg',
-        },
-        {
-          artist: 'The Beatles',
-          songTitle: 'Dear Prudence',
-          image: 'the_beatles-dear_prudence.jpg',
+          songTitle: 'Blackbird',
+          image: 'the_beatles-blackbird.jpg',
         },
         {
           artist: 'The Beatles',
@@ -67,8 +73,13 @@ export default {
         },
         {
           artist: 'The Beatles',
-          songTitle: 'Got To Get You Into My Life',
-          image: 'the_beatles-got_to_get_you_into_my_life.jpg',
+          songTitle: 'Here Comes The Sun',
+          image: 'the_beatles-here_comes_the_sun.jpg',
+        },
+        {
+          artist: 'The Beatles',
+          songTitle: 'Dear Prudence',
+          image: 'the_beatles-dear_prudence.jpg',
         },
         {
           artist: 'Electric Light Orchestra',
@@ -91,14 +102,14 @@ export default {
           image: 'kansas-carry_on_wayward_son.jpg',
         },
         {
-          artist: 'Creedence Clearwater Revival',
-          songTitle: 'Green River',
-          image: 'creedence_clearwater_revival-green_river.jpg',
+          artist: 'The Beatles',
+          songTitle: 'Got To Get You Into My Life',
+          image: 'the_beatles-got_to_get_you_into_my_life.jpg',
         },
         {
           artist: 'Creedence Clearwater Revival',
-          songTitle: 'Have You Ever Seen The Rain',
-          image: 'creedence_clearwater_revival-have_you_ever_seen_the_rain.jpg',
+          songTitle: 'Fortunate Son',
+          image: 'creedence_clearwater_revival-fortunate_son.jpg',
         },
         {
           artist: 'Creedence Clearwater Revival',
@@ -106,19 +117,24 @@ export default {
           image: 'creedence_clearwater_revival-long_as_i_can_see_the_light.jpg',
         },
         {
-          artist: 'Derek & The Dominos',
-          songTitle: 'Layla',
-          image: 'derek_&_the_dominos-layla.jpg',
+          artist: 'Creedence Clearwater Revival',
+          songTitle: 'Bad Moon Rising',
+          image: 'creedence_clearwater_revival-bad_moon_rising.jpg',
         },
         {
-          artist: 'Eddie Rabbitt',
-          songTitle: 'Drivin\' My Life Away',
-          image: 'eddie_rabbitt-drivin_my_life_away.jpg',
+          artist: 'Soundgarden',
+          songTitle: 'Black Hole Sun',
+          image: 'soundgarden-black_hole_sun.jpg',
         },
         {
-          artist: 'Van Morrison',
-          songTitle: 'Bright Side Of The Road',
-          image: 'van_morrison-bright_side_of_the_road.jpg',
+          artist: 'Dire Straits',
+          songTitle: 'Sultans Of Swing',
+          image: 'dire_straits-sultans_of_swing.jpg',
+        },
+        {
+          artist: 'Blind Melon',
+          songTitle: 'No Rain',
+          image: 'blind_melon-no_rain.jpg',
         },
         {
           artist: 'Led Zeppelin',
@@ -126,19 +142,19 @@ export default {
           image: 'led_zeppelin-stairway_to_heaven.jpg',
         },
         {
-          artist: 'Jackson Browne',
-          songTitle: 'Running On Empty',
-          image: 'jackson_browne-running_on_empty.jpg',
+          artist: 'Steely Dan',
+          songTitle: 'Reelin\' In The Years',
+          image: 'steely_dan-reelin\'_in_the_years.jpg',
         },
         {
           artist: 'Pearl Jam',
-          songTitle: 'Alive',
-          image: 'pearl_jam-alive.jpg',
+          songTitle: 'Even Flow',
+          image: 'pearl_jam-evenflow.jpg',
         },
         {
-          artist: 'Hollies',
-          songTitle: 'Long Cool Woman (In A Black Dress)',
-          image: 'hollies-long_cool_woman_(in_a_black_dress).jpg',
+          artist: 'Kings of Leon',
+          songTitle: 'Notion',
+          image: 'kings_of_leon-notion.jpg',
         },
         {
           artist: 'Living Colour',
@@ -146,9 +162,9 @@ export default {
           image: 'living_colour-solace_of_you.jpg',
         },
         {
-          artist: 'Rolling Stones',
-          songTitle: 'Gimme Shelter',
-          image: 'rolling_stones-gimme_shelter.jpg',
+          artist: 'Living Colour',
+          songTitle: 'Love Rears Its Ugly Head',
+          image: 'living_colour-love_rears_its_ugly_head.jpg',
         },
         {
           artist: 'Muse',
@@ -156,9 +172,9 @@ export default {
           image: 'muse-plug_in_baby.jpg',
         },
         {
-          artist: 'Queen',
-          songTitle: 'A Kind Of Magic',
-          image: 'queen-a_kind_of_magic.jpg',
+          artist: 'Free',
+          songTitle: 'All Right Now',
+          image: 'free-all_right_now.jpg',
         },
         {
           artist: 'Red Hot Chili Peppers',
@@ -166,14 +182,9 @@ export default {
           image: 'red_hot_chili_peppers-under_the_bridge.jpg',
         },
         {
-          artist: 'Pink Floyd',
-          songTitle: 'Echoes',
-          image: 'pink_floyd-echoes.jpg',
-        },
-        {
-          artist: 'Elvis Presley',
-          songTitle: 'Burning Love',
-          image: 'elvis_presley-burning_Love.jpg'
+          artist: 'U2',
+          songTitle: 'With Or Without You',
+          image: 'u2-with_or_without-you.jpg',
         },
         {
           artist: 'Elvis Presley',
@@ -186,26 +197,16 @@ export default {
           image: 'jimi_hendrix_experience-the_wind_cries_mary.jpg',
         },
         {
-          artist: 'Fleetwood Mac',
-          songTitle: 'Dreams',
-          image: 'fleetwood_mac-dreams.jpg',
-        },
-        {
-          artist: 'Paul Simon',
-          songTitle: 'The Boy In The Bubble',
-          image: 'paul_simon-the_boy_in_the_bubble.jpg',
-        },
-        {
-          artist: 'Terence Trent D\'Arby',
-          songTitle: 'Wishing Well',
-          image: 'terence_trent_darby-wishing_well.jpg',
+          artist: 'Jimi Hendrix Experience',
+          songTitle: 'Hey Joe',
+          image: 'jimi_hendrix_experience-hey_joe.jpg',
         },
       ],
     };
   },
   computed: {
     getMyTop2000Songs() {
-      return this.myTopSongs.slice().sort((a, b) => {
+      return this.myTopSongs.slice().sort((a, b) => {         
         if (a.artist === b.artist) {
           return a.songTitle.localeCompare(b.songTitle);
         }
@@ -222,7 +223,7 @@ export default {
       this.showCoverArt = false;
     },
   }
-};
+}
 </script>
 
 <style lang="scss">
@@ -289,11 +290,12 @@ li:hover {
 @supports not(-webkit-text-stroke: 2px red) {
   li:hover {
     font-size: 2.2em;
-    text-shadow: 3px 3px 0 var(--mainColor),
-    -1px -1px 0 var(--mainColor),
-    1px -1px 0 var(--mainColor),
-    -1px 1px 0 var(--mainColor),
-    1px 1px 0 var(--mainColor);
+    text-shadow:
+      3px 3px 0 var(--mainColor),
+      -1px -1px 0 var(--mainColor),
+      1px -1px 0 var(--mainColor),
+      -1px 1px 0 var(--mainColor),
+      1px 1px 0 var(--mainColor);
   }
 }
 
