@@ -3,7 +3,7 @@
     <div class="left">
       <h1>My Top 2000</h1>
       <transition name="fade">
-        <img v-show="showCoverArt" :src="'/static/images/' + selectedSong.image" />
+        <img v-show="showCoverArt" :src="'/static/images/' + selectedSong.image" :alt="`${selectedSong.songTitle} cover art`" />
       </transition>
     </div>
     <ul>
@@ -283,7 +283,7 @@ ul {
 li:hover {
   color: transparent;
   -webkit-text-stroke: 2px #f3c500;
-  font-size: 1.9em;
+  font-size: 1.8em;
 }
 
 @supports not(-webkit-text-stroke: 2px red) {
